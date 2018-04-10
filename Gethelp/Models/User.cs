@@ -1,28 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Gethelp.Models
 {
     public class User
     {
-        //public string Username { get; private set; }
-        //public string password { get; private set; }
-        //public string salt { get; set; }
-        //Guid userId;
+        public Guid Id {get; protected set; }
+        public string Username { get; protected set; }
+        public string Password { get; protected set; }
+        public string Salt { get; protected set; }
 
 
 
+        protected User()
+        {
 
+        }
+
+        public User(string username, string password, Guid id, string salt) {
+            Id = id;
+            Username = username;
+            Password = password;
+            Salt = salt;
+
+            }
     }
 
-
-
-
-    public interface IUser
-    {
-
-    }
 
 }
