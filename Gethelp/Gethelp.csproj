@@ -143,6 +143,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="CoreRepositories\IRepository.cs" />
+    <Compile Include="CoreRepositories\IUserRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -150,9 +152,8 @@
     <Compile Include="Models\Therapist.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CoreRepositories\IRepository.cs" />
-    <Compile Include="CoreRepositories\IUserRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Services\IUserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-lumen.css" />
@@ -195,7 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
